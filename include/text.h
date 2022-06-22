@@ -31,7 +31,7 @@ typedef struct
     size_t size;
     int lines_count;
     text_line_t *lines;
-} text_t;  // TODO: buffer_st, text_t, text_line_t embedded structures (one structure)
+} text_t;
 
 /**
  * @brief Get a text structure representing the text of the file with the calculated values (see text_t structure)

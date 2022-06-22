@@ -3,7 +3,7 @@
 #define CMP_LINES_WO_PUNCTUATION  // Used to exclude punctuation from lines comparison functions (comment/uncomment)
 #include "../include/lines_sort.h"
 
-//TODO: use isalpha instead of mine (isalpha uses set_locale), inline
+//TODO: #1 use isalpha instead of mine (isalpha uses set_locale), inline @V13kv
 inline bool isLetter(const char chr)
 {
     //return isalpha(chr);
@@ -34,7 +34,7 @@ int directLinesComparison(const void *a, const void *b)
     assert(strA != NULL && "[!] You have passed a null pointer as a line_a->beginning!");
     assert(strB != NULL && "[!] You have passed a null pointer as a line_b->beginning");
 
-    //TODO: command line arguments
+    //TODO: #2 command line arguments @V13kv
     while (*strA != '\0' && *strB != '\0')
     {
         #ifdef CMP_LINES_WO_PUNCTUATION

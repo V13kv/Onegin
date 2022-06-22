@@ -20,7 +20,10 @@ Also there is documentation generated with [`doxygen`](https://en.wikipedia.org/
 2. Add `doxygen/bin` directory to the environmental variables.
 3. Cd (change directory) to the location of the `Onegin` project.
 4. Open terminal in the location of `Onegin` project.
-5. Run the following command:  ```doxygen```
+5. Run the following command:
+  ```
+  doxygen
+  ```
 6. Open `html` directory and run `index.html` file.
 
 ## Compiling && Running

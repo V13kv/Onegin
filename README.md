@@ -19,7 +19,7 @@ Also there is documentation generated with [`doxygen`](https://en.wikipedia.org/
 1. [`Install doxygen`](https://www.doxygen.nl/download.html);
 2. Add `doxygen/bin` directory to the environmental variables;
 3. Cd (change directory) to the location of the `Onegin` project;
-4. Open `Doxyfile` in notepad and set `OUTPUT_DIRECTORY` to your directory where you want your documentation, `INPUT` to the `Onegin` directory path, `USE_MDFILE_AS_MAINPAGE` to the path of the `README.md` file path (e.g. <your_path>/README.md);
+4. Open `Doxyfile` in notepad and set `OUTPUT_DIRECTORY` to your directory where you want the documentation to be, `INPUT` to the `Onegin` directory path, `USE_MDFILE_AS_MAINPAGE` to the path of the `README.md` file path (e.g. <your_path>/README.md);
 5. Open terminal in the location of `Onegin` project;
 6. Run `doxygen` command in terminal;
 7. Open `html` directory and run `index.html` file.

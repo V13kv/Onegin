@@ -3,8 +3,8 @@
 #include <assert.h>
 #include <string.h>
 
-#include "../include/file.h"
-#include "../include/text.h"
+#include "include/file.h"
+#include "include/text.h"
 
 char *getStrMode(const FILE_MODE mode)
 {

@@ -1,7 +1,7 @@
 #include <assert.h>
 
 #define CMP_LINES_WO_PUNCTUATION  // Used to exclude punctuation from lines comparison functions (comment/uncomment)
-#include "../include/lines_sort.h"
+#include "include/lines_sort.h"
 
 //TODO: #1 use isalpha instead of mine (isalpha uses set_locale), inline @V13kv
 inline bool isLetter(const char chr)

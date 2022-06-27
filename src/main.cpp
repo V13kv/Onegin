@@ -6,8 +6,8 @@
     #include <Windows.h>  // only for SetConsoleOutputCP function
 #endif
 
-#include "../include/text.h"
-#include "../include/lines_sort.h"
+#include "include/text.h"
+#include "include/lines_sort.h"
 
 int main()
 {

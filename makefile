@@ -19,19 +19,19 @@ BuildDir = build
 OBJECTS = $(BuildDir)/main.o $(BuildDir)/text.o $(BuildDir)/file.o $(BuildDir)/lines_sort.o
 
 onegin.exe: $(OBJECTS)
-	g++ $(OBJECTS) -o onegin.exe
+	g++ -I$(IncDir)/.. $(OBJECTS) -o onegin.exe
 
 $(BuildDir)/main.o: $(SrcDir)/main.cpp $(IncDir)/text.h $(IncDir)/lines_sort.h 
-	g++ -c $(SrcDir)/main.cpp $(CXXFLAGS) -o $(BuildDir)/main.o
+	g++ -I$(IncDir)/.. -c $(SrcDir)/main.cpp $(CXXFLAGS) -o $(BuildDir)/main.o
 
 $(BuildDir)/text.o: $(SrcDir)/text.cpp $(IncDir)/text.h
-	g++ -c $(SrcDir)/text.cpp $(CXXFLAGS) -o $(BuildDir)/text.o
+	g++ -I$(IncDir)/.. -c $(SrcDir)/text.cpp $(CXXFLAGS) -o $(BuildDir)/text.o
 
 $(BuildDir)/file.o: $(SrcDir)/file.cpp $(IncDir)/file.h
-	g++ -c $(SrcDir)/file.cpp $(CXXFLAGS) -o $(BuildDir)/file.o
+	g++ -I$(IncDir)/.. -c $(SrcDir)/file.cpp $(CXXFLAGS) -o $(BuildDir)/file.o
 
 $(BuildDir)/lines_sort.o: $(SrcDir)/lines_sort.cpp $(IncDir)/lines_sort.h
-	g++ -c $(SrcDir)/lines_sort.cpp $(CXXFLAGS) -o $(BuildDir)/lines_sort.o
+	g++ -I$(IncDir)/.. -c $(SrcDir)/lines_sort.cpp $(CXXFLAGS) -o $(BuildDir)/lines_sort.o
 
 .PHONY: init
 init:

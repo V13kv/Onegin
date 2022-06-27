@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include "../include/file.h"
+#include "include/file.h"
 
 
 int get_file_capacity(FILE *fs)

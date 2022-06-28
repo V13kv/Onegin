@@ -6,7 +6,7 @@ First task in MIPT in the first year of education.
 The idea is to understand how to work with text files, how to properly represent them.
 
 ## How is it done?
-The program receives the famous novel by Alexander Sergeevich Pushkin "Eugene Onegin" as input and based on the user's settings (modes of [`lexicographical`](https://en.wikipedia.org/wiki/Lexicographic_order) sorting) sorts them and writes them to the output file.  
+The program receives the famous novel by Alexander Sergeevich Pushkin "Eugene Onegin" as input and based on the user's settings (modes of [`lexicographical`](https://en.wikipedia.org/wiki/Lexicographic_order) line sorting) sorts lines and writes them to the output file.  
 Also there is documentation generated with [`doxygen`](https://en.wikipedia.org/wiki/Doxygen).
 
 ## What are the modes of lexicographical sorting?

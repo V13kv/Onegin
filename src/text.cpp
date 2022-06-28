@@ -48,16 +48,13 @@ void textCtor(text_t *text, const char *file_path, const FILE_MODE mode)
     char *data = (char *) calloc(file_capacity + 1, sizeof(char));
     assert(data != NULL && "[!] Got a null pointer after calloc function!");
 
+    // Get text size
     size_t size = fread(data, sizeof(char), file_capacity, fs);
     assert(ferror(fs) == 0 && "[!] There was an error during reading the file stream!");
     data[size] = '\0';
 
     // Get rid of empty lines
     deleteEmptyLines(data);
-
-    // Get text size
-    size = strlen(data);
-    assert(size != 0 && "[!] Got a null pointer after strlen function!");
 
     // Get total amount of non-empty lines
     const int lines_count = getTotalAmountOfLines(data);

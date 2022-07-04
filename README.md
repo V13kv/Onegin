@@ -27,7 +27,7 @@ Also there is documentation generated with [`doxygen`](https://en.wikipedia.org/
 ## Setting up
 **Clone the repository**
 ```
-git clone https://github.com/V13kv/Onegin
+git clone https://github.com/V13kv/Onegin;
 cd Onegin
 ```
 

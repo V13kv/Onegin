@@ -13,16 +13,17 @@ CXXFLAGS = -g -std=c++17 -Wall -Wextra -Weffc++ -Wc++0x-compat -Wc++11-compat -W
 -flto-odr-type-merging -fno-omit-frame-pointer -Wno-unknown-pragmas
 
 SrcDir = src
+ExamplesDir = examples
 IncDir = include
 BuildDir = build
 
 OBJECTS = $(BuildDir)/main.o $(BuildDir)/text.o $(BuildDir)/file.o $(BuildDir)/lines_sort.o
 
-onegin.exe: $(OBJECTS)
+onegin: $(OBJECTS)
 	g++ -I$(IncDir)/.. $(OBJECTS) -o onegin.exe
 
-$(BuildDir)/main.o: $(SrcDir)/main.cpp $(IncDir)/text.h $(IncDir)/lines_sort.h 
-	g++ -I$(IncDir)/.. -c $(SrcDir)/main.cpp $(CXXFLAGS) -o $(BuildDir)/main.o
+$(BuildDir)/main.o: $(ExamplesDir)/main.cpp $(IncDir)/text.h $(IncDir)/lines_sort.h 
+	g++ -I$(IncDir)/.. -c $(ExamplesDir)/main.cpp $(CXXFLAGS) -o $(BuildDir)/main.o
 
 $(BuildDir)/text.o: $(SrcDir)/text.cpp $(IncDir)/text.h
 	g++ -I$(IncDir)/.. -c $(SrcDir)/text.cpp $(CXXFLAGS) -o $(BuildDir)/text.o

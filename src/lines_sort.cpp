@@ -6,9 +6,8 @@
 //TODO: #1 use isalpha instead of mine (isalpha uses set_locale), inline @V13kv
 inline bool isLetter(const char chr)
 {
-    //return isalpha(chr);
     return  (chr >= 'A' && chr <= 'Z') || (chr >= 'a' && chr <= 'z') ||  // For english symbols
-            (chr >= 'ï¿½' && chr <= 'ï¿½') || (chr >= 'ï¿½' && chr <= 'ï¿½');    // For russian symbols
+            (chr >= 'À' && chr <= 'ß') || (chr >= 'à' && chr <= 'ÿ');    // For russian symbols
 }
 
 void skip_letters(char **str, cmp_options_et cmp_option)

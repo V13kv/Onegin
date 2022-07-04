@@ -24,7 +24,20 @@ Also there is documentation generated with [`doxygen`](https://en.wikipedia.org/
 6. Run `doxygen` command in terminal;
 7. Open `html` directory and run `index.html` file.
 
-## Compiling && Running
+## Setting up
+**Clone the repository**
 ```
-make init; make; ./onegin.exe
+git clone https://github.com/V13kv/Onegin
+cd Onegin
+```
+
+**Compiling**
+```
+make init;
+make
+```
+
+## Running
+```
+./onegin.exe
 ```

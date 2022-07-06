@@ -1,4 +1,4 @@
-# Onegin
+# Onegin ![Build Status](https://github.com/V13kv/Onegin/workflows/BuildAndTest/badge.svg)
 Implementation of the string library with lines sorting algorithms.  
 First task in MIPT in the first year of education.
 
